@@ -1,0 +1,117 @@
+@import url(https://fonts.google.com/specimen/Inter);
+@font-face {
+    font-family:'Inter-semibold' ;
+    src: url(assets/fonts/static/Inter-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url(assets/fonts/static/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: 'Inter-VariableFont';
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color:hsl(75, 94%, 57%);
+    --width:1440px;
+    --linkHeight:35px;
+    --linkWidth:220px;
+    --main-width:20%;
+    --main-height:75%;
+    --picWidth:90px;
+    --picHeight:100px;
+    --fontSize:10px;
+}
+
+body{
+    background-color: hsl(0, 0%, 8%);
+    width: var(--width);
+    height:100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main{
+    background-color:  hsl(0, 0%, 12%);
+    width: var(--main-width);
+    height: var(--main-height);
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 20px;
+}
+.profile-pic{
+    background-image: url(assets/images/avatar-jessica.jpeg);
+    background-size: cover;
+    width:var(--picWidth) ;
+    height: var(--picHeight);
+    border: none;
+    border-radius: 50%;
+}
+.links{
+    width:var(--main-width);
+    height: var(--main-height);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-links{
+    width: var(--linkWidth);
+    height: var(--linkHeight);
+    background-color: hsl(0, 0%, 20%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.85rem;
+    border: none;
+    border-radius: 8px;
+    color: hsl(0, 0%, 100%);
+    font-size: var(--fontSize);
+    font-family: 'Inter-semibold';
+    font-weight: 600;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:var(--linkWidth);
+    height:30%;
+    
+}
+.name{
+    font-size: 14px;
+    font-weight: 700;
+    color:  hsl(0, 0%, 100%);
+    font-family: 'Inter-Regular';
+    margin-top: 15px;
+}
+.location{
+    font-size: var(--fontSize) ;
+    font-family: 'Inter-semibold';
+    font-weight: 600;
+    color: hsl(75, 94%, 57%);
+    margin-top: 8px;
+}
+.job-role{
+    font-size: 10px;
+    color: hsl(0, 0%, 100%);
+    margin-top:15px ;
+    font-family: 'Inter-VariableFont';
+    font-weight: 400;
+}
+
+.social-links:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
