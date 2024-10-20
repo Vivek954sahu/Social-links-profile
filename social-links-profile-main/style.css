@@ -21,10 +21,10 @@
     --width:1440px;
     --linkHeight:35px;
     --linkWidth:220px;
-    --main-width:20%;
-    --main-height:75%;
-    --picWidth:90px;
-    --picHeight:100px;
+    --main-width:288px;
+    --main-height:80%;
+    --picWidth:100px;
+    --picHeight:150px;
     --fontSize:10px;
 }
 
@@ -114,4 +114,34 @@ body{
     background-color: hsl(75, 94%, 57%);
     color: hsl(0, 0%, 8%);
     cursor: pointer;
+}
+
+@media screen and (max-width:480px){
+    :root{
+        --width:100%;
+        --linkHeight:25px;
+        --linkWidth:190px;
+        --main-width:50%;
+        --main-height:356px;
+        --picWidth:66px;
+        --picHeight:100px;
+        --fontSize:8px;
+    }
+    .info{
+        width:var(--linkWidth);
+        height:30%; 
+    }
+    .name{
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    .location{
+        font-size: 8px ;
+        margin-top: 5px;
+    }
+    .job-role{
+        font-size: 8px;
+        margin-top:10px ;
+    }
+
 }
